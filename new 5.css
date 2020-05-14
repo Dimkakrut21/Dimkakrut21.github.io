@@ -1,0 +1,53 @@
+.spisok {
+	
+	background: #333;
+	display: flex;
+}
+
+ .spisok span:hover{
+	display:block;
+	background-color:white;
+}
+.spisok a:hover{
+
+	display:block;
+}
+	.spisok span {
+		position:relative;
+		left:40%;
+border-radius: 28px;
+	}
+ .spisok a {
+	background-color:rgba(0,0,0,.5);
+border-radius: 18px;
+	 padding:16px;
+    margin: 4px;
+	display: inline-block;
+	text-decoration:none;
+	font-size: 18px;
+    line-height: 6px;
+    text-align: center;
+    color: #fff;
+
+}
+.podskazka{
+	    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+
+}
+.podskazka:hover::after {
+
+    content: attr(data-title); /* Выводим текст */
+
+    left: 90%; top: 90%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    	background:rgba(0,0,0,.5); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 12px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #fff; /* Параметры рамки */
+     color:white;
+   }
+   .blank{
+	  
+   }
