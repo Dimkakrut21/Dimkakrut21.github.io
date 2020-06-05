@@ -1,43 +1,73 @@
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+body{
+    font-family: Pompadur;
+    width: 100%;
+    color: #fff;
+}
+#body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    width:70% ;
+    color: rgb(0, 0, 0) ;
+    background: linear-gradient(to top left, #FFE4C4,#04c77f, #05faa0);
+    opacity: 0.85;
+    border: 3px solid rgb(242, 212, 243) ;
+    box-align: center;
+	border-collapse: collapse;
+}
+td{
+
+    width: 50%;
+}
+tr{
+    transition: 0.5s;
+    
+}
+tr#col
+{
+    background-color:black;
+}
+tr:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+h1 {
+    text-align: center;
+}
+#italy{
+    background: url(images/italy.jpg)  no-repeat center center/cover;
+}
+#japan{
+    background: url(images/japan.jpg) no-repeat center center/cover;
+}
+#england{
+    background: url(images/england.jpg) no-repeat center center/cover;
+}
+#france{
+    background: url(images/france.jpg) no-repeat center center/cover;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+#switzerland{
+    background: url(images/switzerland.jpg) no-repeat center center/cover;
+}
+#hungary{
+    background: url(images/hungary.jpg) no-repeat center center/cover;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
+#india{
+    background: url(images/india.jpg) no-repeat center center/cover;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+#romania{
+    background: url(images/romania.jpg) no-repeat center center/cover;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.bg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
