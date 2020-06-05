@@ -1,73 +1,121 @@
-body{
-    font-family: Pompadur;
-    width: 100%;
-    color: #fff;
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {margin:0;}
+h2 {
+  font-family: monospace;
+  color: #606060;
 }
-#body{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav {
+  width: 660px;
+  margin: 0 auto 30px;
 }
-table{
-    width:70% ;
-    color: rgb(0, 0, 0) ;
-    background: linear-gradient(to top left, #FFE4C4,#04c77f, #05faa0);
-    opacity: 0.85;
-    border: 3px solid rgb(242, 212, 243) ;
-    box-align: center;
-	border-collapse: collapse;
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
 }
-td{
-
-    width: 50%;
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
 }
-tr{
-    transition: 0.5s;
-    
+.topmenu > li:last-child {
+  margin-right: 0;
 }
-tr#col
-{
-    background-color:black;
+a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
 }
-tr:hover{
-    background-color: rgba(0,0,0,0.3);
+.fa {
+  font-family: "FontAwesome";
+  color: inherit;
+  padding-left: 10px;
 }
-h1 {
-    text-align: center;
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-#italy{
-    background: url(images/italy.jpg)  no-repeat center center/cover;
+.one ul {
+  background: #ECDAD6;
 }
-#japan{
-    background: url(images/japan.jpg) no-repeat center center/cover;
+.one ul a {
+  color: #695753;
 }
-#england{
-    background: url(images/england.jpg) no-repeat center center/cover;
+.one .submenu {
+  display: none;
+  background: #b19891;
 }
-#france{
-    background: url(images/france.jpg) no-repeat center center/cover;
+.one ul li:hover .submenu {
+  display: block;
 }
-
-#switzerland{
-    background: url(images/switzerland.jpg) no-repeat center center/cover;
+.two ul {
+  background: #D4E7EE;
 }
-#hungary{
-    background: url(images/hungary.jpg) no-repeat center center/cover;
+.two ul a {
+  color: #29838C;
 }
-
-#india{
-    background: url(images/india.jpg) no-repeat center center/cover;
+.two .submenu {
+  visibility: hidden;
+  background: #ADC0CE;
 }
-
-#romania{
-    background: url(images/romania.jpg) no-repeat center center/cover;
+.two ul li:hover .submenu {
+  visibility: visible;
 }
-
-.bg{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.three ul {
+  background: #E4EFD1;
+}
+.three ul a {
+  color: #74924C;
+}
+.three .submenu {
+  visibility: hidden;
+  opacity: 0;
+  background: #BAD78B;
+}
+.three ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.four ul {
+  background: #FFD7A7;
+}
+.four .submenu {
+  -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  background: #FFAB51;
+}
+.four ul li:hover .submenu {
+  -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.four ul a {
+  color: #9B4222;
+}
+.five ul {
+  background: #FFE075;
+}
+.five ul a {
+  color: #A87B31;
+}
+.five .submenu {
+  background: #EEBD1A;
+}
+.submenu li a {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  color: white;
 }
