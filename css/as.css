@@ -3,5 +3,8 @@ p {
     color: green; /* Синий цвет текста абзаца */
    }
 ol {
-	text-align:
+	text-align:center;
 	}
+image {
+border-radius: 200px; /* CSS3 */
+}
