@@ -1,106 +1,59 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
-<html>
-<title>Код шаблона 'Фото'</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" content="Пример шаблона для сайта 'Фото' | Schoolsw3.com" />
-<link rel="stylesheet" href="/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
-<body>
-
-<!-- Боковая панель -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Обо Мне</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Фото</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Магазин</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Контакты</a>
-  </div>
-</nav>
-
-
-	<div class="w3-content" style="max-width:1500px">
-
-
-<div class="Gallery">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-  <h1><b>ПОРТФОЛИО</b></h1>
-  <p><b>Шаблон, созданный w3.css для фотографов.</b></p>
-  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Переключаемая Сетка Отступов</button></p>
-</header>
-</div>
-
-
-<div class="w3-row" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
-    <img src="/img/img1.jpg" style="width:100%">
-    <img src="/img/img2.jpg" style="width:100%">
-    <img src="/img/img3.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-   
-     <img src="/img/img4.jpg" style="width:100%">
-    <img src="/img/img5.jpg" style="width:100%">
-    <img src="/img/img6.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/workbench.jpg" style="width:100%">
-    <img src="/w3images/gondol.jpg" style="width:100%">
-    <img src="/w3images/skies.jpg" style="width:100%">
-    <img src="/w3images/lights.jpg" style="width:100%">
-    <img src="/w3images/workshop.jpg" style="width:100%">
-  </div>
-</div>
-
-
-</div>
-
-<!-- Подвал -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Работает на <a href="https://schoolsw3.com/w3css/index.php" target="_blank">w3.css</a></p>
-</footer>
- 
-<script>
-// Переключатель Сетка Отступ
-function myFunction() {
-    var x = document.getElementById("myGrid");
-    if (x.className === "w3-row") {
-        x.className = "w3-row-padding";
-    } else { 
-        x.className = x.className.replace("w3-row-padding", "w3-row");
-    }
+html,
+body {
+  background: #a9e1fa;
+  height: 100%;
 }
 
-// Открыть и закрыть боковую панель
-function w3_open() {
-    document.getElementById("mySidebar").style.width = "100%";
-    document.getElementById("mySidebar").style.display = "block";
+a {
+  text-decoration: none;
 }
 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-</script>
 
-</body>
-</html>
+.menu__link {
+  display: inline-block;
+  color: #2d6c90;
+  text-decoration: none;
+  position: relative;
+  padding: 14px 0;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.040em;
+}
+
+.menu__link svg {
+  fill: none;
+  stroke: #70aec9;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 338;
+  stroke-dashoffset: 338;
+  stroke-linecap: round;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 60px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  z-index: -1;
+}
+
+.menu__link--active svg {
+  stroke: #ff4c4c;
+}
+
+.menu__link--active svg,
+.menu__link:hover svg {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
